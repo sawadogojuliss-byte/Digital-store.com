@@ -1,39 +1,44 @@
-# Digital Store — Boutique de produits numériques
+# Digital Store — Abonnements & Formations Premium
 
-Site vitrine e-commerce premium, conçu pour **inspirer confiance** et convertir :
-ebooks, templates Notion & Canva, formations vidéo, presets photo et tableurs Excel.
+Boutique en ligne **orientée confiance client** : abonnements Netflix / CANAL+
+et formations certifiées (Anglais, E-commerce, ChatGPT, Alibaba) jusqu'à **-70 %**.
+Prix en FCFA, convertisseur EUR/USD, paiement via **Chariow** (Mobile Money & carte).
 
-## ✨ Points forts (orientés confiance client)
+## ✨ Améliorations axées confiance
 
-- 🛡️ **Garantie 30 jours** satisfait ou remboursé, mise en avant partout
-- 🔒 **Paiement sécurisé** : badges SSL 256 bits, Visa / Mastercard / PayPal / Apple Pay
-- ⭐ **Preuve sociale** : 2 480 avis vérifiés, témoignages, notifications d'achats récents
-- ⚡ **Téléchargement instantané** expliqué étape par étape
-- 💬 **FAQ** complète (paiement, remboursement, formats, licence, support)
-- 🛒 **Panier fonctionnel** persistant (localStorage) avec tiroir latéral
-- 📱 Design responsive, animations soignées, palette indigo → violet
+- 🛡️ **Garantie 30 jours** satisfait ou remboursé, visible sur tout le site
+- 🔒 **Paiement sécurisé Chariow** + badges Mobile Money (Orange Money, Wave, Moov) et Visa/Mastercard
+- ⭐ **1 240 avis vérifiés** et témoignages clients avec badge « ✔ Achat vérifié »
+- 🖼️ **Nouveaux visuels produits premium** générés sur mesure (thème sombre cohérent)
+- 📊 **Chiffres crédibles** (les statistiques gonflées ont été corrigées — elles nuisaient à la crédibilité)
+- 💰 **Calculateur d'économies** (coût officiel vs offre Digital Store)
+- ⚡ **Activation en 3 étapes** clairement expliquée
+- ❓ **FAQ** : activation, légalité, multi-appareils, support, remboursement
+- 🎁 Pop-up code promo (exit-intent) · 🔔 notifications d'achats récents
+- 📱 Design responsive, thème sombre, canvas animé **sans dépendance lourde** (Three.js/Vanta supprimés)
+- 🔧 Corrige les erreurs 404 des fichiers `js/global-stock-manager.js` et `js/user-stock-simulator.js`
+  référencés mais absents de l'ancienne version
 
 ## 🗂️ Structure
 
 ```
 ├── index.html            # Page unique (français)
-├── css/styles.css        # Feuille de style
-├── js/main.js            # Panier, FAQ, animations, preuve sociale
-└── assets/
-    ├── hero.jpg          # Visuel principal (généré)
-    └── products/         # 6 visuels produits (générés)
+├── css/styles.css        # Thème sombre (#6C63FF / #FF6584 / #36D1DC)
+├── js/main.js            # Produits, devises, calculateur, modales, promo
+└── assets/products/      # 6 visuels produits générés
 ```
 
 ## 🚀 Lancer en local
 
-Aucune dépendance, site 100 % statique :
+Site 100 % statique, aucune dépendance :
 
 ```bash
 python3 -m http.server 8080
 # → http://localhost:8080
 ```
 
-## 📝 Note
+## 💳 Paiement
 
-Le bouton « Commander » est une **démo** : aucun paiement réel n'est traité.
-Brancher Stripe / PayPal / Gumroad / Lemon Squeezy pour la mise en production.
+Les boutons « Commander » redirigent vers les pages de paiement **Chariow**
+existantes (liens inchangés). Le code promo `OBCU1KPVRVVC` est repris de
+l'ancienne version.
