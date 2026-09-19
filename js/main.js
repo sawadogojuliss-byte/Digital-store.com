@@ -10,6 +10,12 @@
   const $ = (sel, ctx) => (ctx || document).querySelector(sel);
   const $$ = (sel, ctx) => Array.from((ctx || document).querySelectorAll(sel));
 
+  /* Helpers visibilité : attribut 'hidden' + style inline.
+     Le style inline garantit le bon rendu même si une ancienne
+     version du CSS (en cache) forcerait l'affichage des pop-ups. */
+  const showEl = (el, disp) => { el.hidden = false; el.style.display = disp; };
+  const hideEl = (el) => { el.hidden = true; el.style.display = "none"; };
+
   /* ══ DONNÉES PRODUITS (prix en FCFA, liens Chariow réels) ══ */
   const products = [
     {
@@ -318,6 +324,7 @@
   /* ══ Modale détails produit ══ */
   const modal = $("#productModal");
   const modalContent = $("#productModalContent");
+  hideEl(modal);
 
   function openProductModal(id) {
     const p = products.find((x) => x.id === id);
@@ -338,11 +345,11 @@
         <a class="btn btn--primary btn--lg btn--block" href="${p.purchaseLink}" target="_blank" rel="noopener">Commander — paiement sécurisé</a>
         <p class="pm__secure">🔒 Transaction chiffrée via Chariow · ⚡ Activation en 5 min · 🛡️ Garantie 30 jours</p>
       </div>`;
-    modal.hidden = false;
+    showEl(modal, "grid");
     document.body.style.overflow = "hidden";
   }
   function closeProductModal() {
-    modal.hidden = true;
+    hideEl(modal);
     document.body.style.overflow = "";
   }
   document.addEventListener("click", (e) => {
@@ -422,12 +429,13 @@
   const PROMO_CODE = "OBCU1KPVRVVC";
   let promoShown = sessionStorage.getItem("ds_promo_shown") === "1";
   let promoCountdown = null;
+  hideEl(promo);
 
   function showPromo() {
     if (promoShown) return;
     promoShown = true;
     sessionStorage.setItem("ds_promo_shown", "1");
-    promo.hidden = false;
+    showEl(promo, "grid");
     let secs = 600;
     const timerEl = $("#promoTimer");
     promoCountdown = setInterval(() => {
@@ -439,7 +447,7 @@
     }, 1000);
   }
   function closePromo() {
-    promo.hidden = true;
+    hideEl(promo);
     if (promoCountdown) clearInterval(promoCountdown);
   }
   $("#promoClose").addEventListener("click", closePromo);
@@ -481,6 +489,7 @@
   /* ══ Preuve sociale (achats récents) ══ */
   const proof = $("#socialProof");
   const proofText = $("#socialProofText");
+  hideEl(proof);
   const buyers = [
     ["Awa", "Ouagadougou", "l'abonnement Netflix Premium"],
     ["Ibrahim", "Abidjan", "la Formation ChatGPT Expert"],
@@ -496,12 +505,12 @@
     const [name, city, product] = buyers[Math.floor(Math.random() * buyers.length)];
     const mins = 2 + Math.floor(Math.random() * 40);
     proofText.innerHTML = `<strong>${name}</strong> (${city}) vient de commander ${product}<br><small>il y a ${mins} min · ✔ Achat vérifié</small>`;
-    proof.hidden = false;
-    setTimeout(() => (proof.hidden = true), 6500);
+    showEl(proof, "flex");
+    setTimeout(() => hideEl(proof), 6500);
   }
   setTimeout(() => { showProof(); setInterval(showProof, 26000); }, 9000);
   $("#socialProofClose").addEventListener("click", () => {
-    proof.hidden = true;
+    hideEl(proof);
     sessionStorage.setItem("ds_proof_off", "1");
   });
 
