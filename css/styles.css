@@ -32,6 +32,11 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
+
+/* Priorité absolue à l'attribut hidden : empêche les display:grid/flex
+   des classes de forcer l'affichage des éléments masqués (pop-ups, modales) */
+[hidden] { display: none !important; }
+
 html { scroll-behavior: smooth; }
 
 body {
