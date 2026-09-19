@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Store — Abonnements & Formations Premium à -70%</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Abonnements Netflix, Canal+ et formations certifiées à -70%. Activation en 5 minutes, paiement sécurisé (Mobile Money, carte), support 24/7 et garantie 30 jours satisfait ou remboursé. Économisez jusqu'à 400 000 FCFA." />
+  <meta name="keywords" content="netflix, canal+, formation anglais, e-commerce, chatgpt, alibaba, abonnement premium, FCFA, mobile money" />
+  <meta property="og:title" content="Digital Store — Abonnements & Formations Premium à -70%" />
+  <meta property="og:description" content="Activation en 5 minutes. Paiement sécurisé. Garantie 30 jours satisfait ou remboursé." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/products/netflix-premium.jpg" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236C63FF'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='30' font-weight='bold' fill='white' text-anchor='middle'%3EDS%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=4" />
+</head>
+<body>
+
+  <!-- ══════════ Bandeau confiance ══════════ -->
+  <div class="topbar" role="note">
+    <div class="container topbar__inner">
+      <span>🔒 Paiement sécurisé Chariow</span>
+      <span class="topbar__sep" aria-hidden="true">•</span>
+      <span>⚡ Activation en 5 minutes</span>
+      <span class="topbar__sep" aria-hidden="true">•</span>
+      <span>🛡️ Garantie 30 jours satisfait ou remboursé</span>
+    </div>
+  </div>
+
+  <!-- ══════════ En-tête ══════════ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#accueil" class="logo" aria-label="Digital Store — Accueil">
+        <svg class="logo__icon" viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-4Z" fill="url(#lg)"/><path d="m8.5 12 2.5 2.5 4.5-5.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="lg" x1="0" y1="0" x2="24" y2="24"><stop stop-color="#6C63FF"/><stop offset="1" stop-color="#FF6584"/></linearGradient></defs></svg>
+        <span class="logo__text">Digital<span>Store</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <a href="#produits">Nos offres</a>
+        <a href="#avantages">Avantages</a>
+        <a href="#economies">Économies</a>
+        <a href="#avis">Avis clients</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="header__actions">
+        <div class="currency" role="group" aria-label="Choisir la devise">
+          <button class="currency__btn active" data-currency="XOF">FCFA</button>
+          <button class="currency__btn" data-currency="EUR">EUR</button>
+          <button class="currency__btn" data-currency="USD">USD</button>
+        </div>
+        <a href="#produits" class="btn btn--primary btn--small header__cta">Voir les offres</a>
+        <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="accueil">
+    <!-- ══════════ Héros ══════════ -->
+    <section class="hero">
+      <canvas id="net-bg" aria-hidden="true"></canvas>
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__content reveal">
+        <div class="hero__proof">
+          <div class="avatars" aria-hidden="true">
+            <span style="--c1:#6C63FF;--c2:#36D1DC">MD</span>
+            <span style="--c1:#2ECC71;--c2:#36D1DC">TK</span>
+            <span style="--c1:#FF9F1C;--c2:#FF6584">SM</span>
+            <span style="--c1:#FF6584;--c2:#6C63FF">AD</span>
+            <span style="--c1:#8B5CF6;--c2:#EC4899">JN</span>
+          </div>
+          <p><span class="stars stars--sm" aria-hidden="true"><i style="width:98%"></i></span> <strong>4,9/5</strong> — plus de <strong>1 240 avis vérifiés</strong></p>
+        </div>
+
+        <h1>Abonnements &amp; Formations <span class="grad-text">Premium à -70%</span></h1>
+        <p class="hero__lead">Accédez à Netflix, Canal+ et à nos formations certifiées avec des économies exceptionnelles. Support 24/7 et garantie satisfait ou remboursé.</p>
+
+        <div class="hero__cta">
+          <a href="#produits" class="btn btn--primary btn--lg">Découvrir les offres
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#avantages" class="btn btn--ghost btn--lg">Voir les avantages</a>
+        </div>
+
+        <ul class="hero__bullets">
+          <li><i class="check"></i>Activation immédiate</li>
+          <li><i class="check"></i>Paiement Mobile Money &amp; carte</li>
+          <li><i class="check"></i>Support 24/7 en français</li>
+        </ul>
+
+        <div class="hero__stats">
+          <div class="hero__stat"><strong>18 500+</strong><span>visiteurs ce mois</span></div>
+          <div class="hero__stat"><strong>4,9/5</strong><span>satisfaction clients</span></div>
+          <div class="hero__stat"><strong>24/7</strong><span>support disponible</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ Statistiques du jour ══════════ -->
+    <section class="livestats" aria-label="Statistiques en temps réel">
+      <div class="container">
+        <p class="livestats__date">Statistiques en temps réel · <span id="currentDate"></span></p>
+        <div class="livestats__grid">
+          <div class="livestat reveal">
+            <div class="livestat__icon">👥</div>
+            <strong id="statVisitors">18 542</strong><span>visiteurs aujourd'hui</span>
+          </div>
+          <div class="livestat reveal">
+            <div class="livestat__icon">⭐</div>
+            <strong>4,9<span class="muted">/5</span></strong><span>note moyenne</span>
+          </div>
+          <div class="livestat reveal">
+            <div class="livestat__icon">🛒</div>
+            <strong id="statSales">127</strong><span>achats aujourd'hui</span>
+          </div>
+          <div class="livestat reveal">
+            <div class="livestat__icon">💬</div>
+            <strong id="statReviews">38</strong><span>avis publiés</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ Avantages ══════════ -->
+    <section class="section" id="avantages">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Nos engagements</span>
+          <h2>Pourquoi nos clients nous font confiance</h2>
+          <p>Une expérience pensée pour votre satisfaction, de la commande à l'utilisation.</p>
+        </div>
+        <div class="adv__grid">
+          <div class="adv reveal">
+            <div class="adv__icon adv__icon--violet">⚡</div>
+            <h3>Activation immédiate</h3>
+            <p>Recevez vos accès par e-mail en moins de 5 minutes après paiement.</p>
+          </div>
+          <div class="adv reveal">
+            <div class="adv__icon adv__icon--green">🛡️</div>
+            <h3>Garantie 30 jours</h3>
+            <p>Essayez sans risque : remboursement intégral sous 30 jours, sans question.</p>
+          </div>
+          <div class="adv reveal">
+            <div class="adv__icon adv__icon--cyan">🎧</div>
+            <h3>Support réactif</h3>
+            <p>Une équipe humaine vous répond en moins de 2 heures, 7 jours sur 7.</p>
+          </div>
+          <div class="adv reveal">
+            <div class="adv__icon adv__icon--pink">🔒</div>
+            <h3>Paiement sécurisé</h3>
+            <p>Transactions chiffrées via Chariow. Vos données ne sont jamais stockées.</p>
+          </div>
+          <div class="adv reveal">
+            <div class="adv__icon adv__icon--amber">♾️</div>
+            <h3>Accès permanent</h3>
+            <p>Nos produits sont permanents : aucun frais caché, aucune surprise.</p>
+          </div>
+          <div class="adv reveal">
+            <div class="adv__icon adv__icon--blue">🏅</div>
+            <h3>Certificats officiels</h3>
+            <p>Recevez des certificats reconnus pour valoriser vos nouvelles compétences.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ Produits ══════════ -->
+    <section class="section section--alt" id="produits">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Nos offres</span>
+          <h2>Nos produits populaires</h2>
+          <p>Des abonnements et formations vérifiés, avec des économies exceptionnelles.</p>
+        </div>
+        <div class="products__grid" id="productsGrid"><!-- Rendu par JS --></div>
+
+        <div class="securebar reveal" role="note">
+          <span>🔒 Paiement 100 % sécurisé via <strong>Chariow</strong> — nous acceptons :</span>
+          <div class="pay-badges">
+            <span class="pay-badge pay-badge--om">Orange Money</span>
+            <span class="pay-badge pay-badge--wave">Wave</span>
+            <span class="pay-badge pay-badge--moov">Moov Money</span>
+            <span class="pay-badge pay-badge--visa">VISA</span>
+            <span class="pay-badge pay-badge--mc"><i></i><i></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ Calculateur d'économies ══════════ -->
+    <section class="section savings" id="economies">
+      <div class="container">
+        <div class="savings__box reveal">
+          <div class="savings__left">
+            <span class="eyebrow">Calculateur</span>
+            <h2>Calculez vos économies</h2>
+            <p>Comparez le coût officiel à notre offre à paiement unique, sur la durée de votre choix.</p>
+            <label class="savings__label" for="savProduct">Choisissez votre abonnement</label>
+            <select id="savProduct" class="savings__select"></select>
+            <label class="savings__label" for="savMonths">Durée : <strong id="savMonthsLabel">12 mois</strong></label>
+            <input type="range" id="savMonths" min="1" max="24" value="12" />
+          </div>
+          <div class="savings__right">
+            <div class="savings__row"><span>Coût officiel sur <em id="savPeriod2">12 mois</em></span><strong class="savings__official" id="savOfficial">—</strong></div>
+            <div class="savings__row"><span>Notre offre (paiement unique)</span><strong id="savOurs">—</strong></div>
+            <div class="savings__total">
+              <span>Vous économisez</span>
+              <strong id="savAmount">—</strong>
+            </div>
+            <a href="#produits" class="btn btn--primary">Profiter de l'offre</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ Activation en 3 étapes ══════════ -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Simple &amp; rapide</span>
+          <h2>Activation immédiate en 3 étapes</h2>
+        </div>
+        <div class="steps__grid">
+          <div class="step reveal">
+            <span class="step__num">1</span>
+            <div class="step__icon">💳</div>
+            <h3>Paiement sécurisé</h3>
+            <p>Payez par Mobile Money ou carte bancaire via Chariow, en toute sécurité.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num">2</span>
+            <div class="step__icon">📩</div>
+            <h3>Réception immédiate</h3>
+            <p>Vos identifiants ou accès arrivent par e-mail en moins de 5 minutes.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num">3</span>
+            <div class="step__icon">🎉</div>
+            <h3>Profitez pleinement</h3>
+            <p>Support 24/7 et garantie 30 jours : vous êtes accompagné à chaque étape.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ Garanties ══════════ -->
+    <section class="section section--alt" id="garanties">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Zéro risque</span>
+          <h2>Nos garanties exclusives</h2>
+          <p>Nous garantissons votre satisfaction à 100 %.</p>
+        </div>
+        <div class="guarantees__grid">
+          <div class="guarantee reveal">
+            <div class="guarantee__badge">💰</div>
+            <h3>Remboursement 30 jours</h3>
+            <p>Pas satisfait ? Un simple message suffit : remboursement intégral sous 48 h, sans justification.</p>
+          </div>
+          <div class="guarantee reveal">
+            <div class="guarantee__badge">🎧</div>
+            <h3>Support prioritaire 24/7</h3>
+            <p>Par WhatsApp ou e-mail, une équipe réelle vous répond en moins de 2 heures, jour et nuit.</p>
+          </div>
+          <div class="guarantee reveal">
+            <div class="guarantee__badge">🏆</div>
+            <h3>Qualité certifiée</h3>
+            <p>Chaque produit est testé et vérifié par notre équipe avant d'être mis en ligne.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ Avis clients ══════════ -->
+    <section class="section" id="avis">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Ils nous font confiance</span>
+          <h2>Ce que disent nos clients</h2>
+          <p><span class="stars" aria-hidden="true"><i style="width:98%"></i></span> <strong>4,9/5</strong> sur la base de <strong>1 240 avis vérifiés</strong></p>
+        </div>
+        <div class="reviews__grid" id="reviewsGrid"><!-- Rendu par JS --></div>
+      </div>
+    </section>
+
+    <!-- ══════════ FAQ ══════════ -->
+    <section class="section section--alt" id="faq">
+      <div class="container faq__inner">
+        <div class="section__head reveal">
+          <span class="eyebrow">Questions fréquentes</span>
+          <h2>Tout savoir avant de commander</h2>
+        </div>
+        <div class="faq__list reveal">
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Comment fonctionne l'activation ?<span class="faq__chev"></span></button>
+            <div class="faq__a"><p>L'activation est immédiate après paiement. Vous recevez vos identifiants par e-mail dans les 5 minutes suivant votre achat. Aucune intervention manuelle n'est nécessaire.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Est-ce légal ?<span class="faq__chev"></span></button>
+            <div class="faq__a"><p>Oui. Nous travaillons avec des partenaires qui nous permettent de proposer ces abonnements à des tarifs préférentiels, et nos formations sont certifiées. Tous nos services sont conformes.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Puis-je utiliser l'abonnement sur plusieurs appareils ?<span class="faq__chev"></span></button>
+            <div class="faq__a"><p>Oui, selon le produit vous pouvez utiliser vos accès sur plusieurs appareils simultanément. Les limites exactes sont précisées dans la description de chaque produit.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Que se passe-t-il si j'ai un problème technique ?<span class="faq__chev"></span></button>
+            <div class="faq__a"><p>Notre équipe de support est disponible 24h/24 et 7j/7. Contactez-nous par WhatsApp ou par e-mail : nous répondons en moins de 2 heures.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Comment fonctionne la garantie de remboursement ?<span class="faq__chev"></span></button>
+            <div class="faq__a"><p>Si vous n'êtes pas satisfait de votre achat, vous pouvez demander un remboursement intégral dans les 30 jours suivant votre commande. Aucune justification n'est requise.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ CTA final ══════════ -->
+    <section class="cta">
+      <div class="container cta__inner reveal">
+        <h2>Prêt à économiser jusqu'à <span class="grad-text">400 000 FCFA</span> ?</h2>
+        <p>Rejoignez nos milliers de clients satisfaits. Activation en 5 minutes, garantie 30 jours.</p>
+        <a href="#produits" class="btn btn--light btn--lg">Voir les offres à -70%</a>
+        <div class="cta__trust"><span>🔒 Paiement sécurisé</span><span>⚡ Activation 5 min</span><span>🛡️ Garantie 30 jours</span></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════ Pied de page ══════════ -->
+  <footer class="footer" id="contact">
+    <div class="container footer__grid">
+      <div class="footer__col footer__col--brand">
+        <a href="#accueil" class="logo logo--footer">
+          <svg class="logo__icon" viewBox="0 0 24 24" width="24" height="24" fill="none"><path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-4Z" fill="url(#lg2)"/><path d="m8.5 12 2.5 2.5 4.5-5.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="lg2" x1="0" y1="0" x2="24" y2="24"><stop stop-color="#6C63FF"/><stop offset="1" stop-color="#FF6584"/></linearGradient></defs></svg>
+          <span class="logo__text">Digital<span>Store</span></span>
+        </a>
+        <p>Abonnements premium et formations certifiées jusqu'à -70%. Activation immédiate, support 24/7 et garantie 30 jours satisfait ou remboursé.</p>
+        <div class="pay-badges pay-badges--footer">
+          <span class="pay-badge pay-badge--om">Orange Money</span>
+          <span class="pay-badge pay-badge--wave">Wave</span>
+          <span class="pay-badge pay-badge--moov">Moov Money</span>
+          <span class="pay-badge pay-badge--visa">VISA</span>
+          <span class="pay-badge pay-badge--mc"><i></i><i></i></span>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Nos produits</h4>
+        <a href="#produits">Abonnement Netflix Premium</a>
+        <a href="#produits">Abonnement CANAL+ Complet</a>
+        <a href="#produits">Formations certifiées</a>
+        <a href="#economies">Calculez vos économies</a>
+      </div>
+      <div class="footer__col">
+        <h4>Aide &amp; garanties</h4>
+        <a href="#faq">Questions fréquentes</a>
+        <a href="#garanties">Garantie 30 jours</a>
+        <a href="#avis">Avis clients vérifiés</a>
+        <a href="#">Politique de remboursement</a>
+      </div>
+      <div class="footer__col">
+        <h4>Support 24/7</h4>
+        <a href="mailto:contact@digital-store.com">contact@digital-store.com</a>
+        <a href="https://wa.me/22660000000" rel="noopener">WhatsApp — réponse &lt; 2 h</a>
+        <p class="footer__note">🔒 Paiements traités par Chariow<br>Site protégé SSL</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 Digital Store — Tous droits réservés.</p>
+      <p><span class="stars stars--sm" aria-hidden="true"><i style="width:98%"></i></span> 4,9/5 · 1 240 avis vérifiés</p>
+    </div>
+  </footer>
+
+  <!-- ══════════ Modale détails produit ══════════ -->
+  <div class="modal" id="productModal" hidden>
+    <div class="modal__box modal__box--product">
+      <button class="modal__close" id="productModalClose" aria-label="Fermer">✕</button>
+      <div id="productModalContent"></div>
+    </div>
+  </div>
+
+  <!-- ══════════ Pop-up code promo (exit intent) ══════════ -->
+  <div class="promo" id="promoPopup" hidden>
+    <div class="promo__box">
+      <button class="promo__close" id="promoClose" aria-label="Fermer">✕</button>
+      <div class="promo__badge">🎁</div>
+      <h3>ATTENDEZ !</h3>
+      <p class="promo__sub">Profitez de <strong>-30% supplémentaires</strong> avec le code :</p>
+      <div class="promo__code" id="promoCode">OBCU1KPVRVVC</div>
+      <p class="promo__timer">valable <strong id="promoTimer">10:00</strong></p>
+      <button class="btn btn--primary btn--lg btn--block" id="promoCopy">Copier le code</button>
+      <p class="promo__note">À saisir lors du paiement sur Chariow</p>
+    </div>
+  </div>
+
+  <!-- ══════════ Notifications ══════════ -->
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <div class="social-proof" id="socialProof" hidden>
+    <span class="social-proof__dot"></span>
+    <p id="socialProofText"></p>
+    <button id="socialProofClose" aria-label="Fermer">✕</button>
+  </div>
+
+  <script src="js/main.js?v=4"></script>
+</body>
+</html>
