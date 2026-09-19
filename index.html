@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Store — Produits numériques premium, en toute confiance</title>
+  <meta name="description" content="Digital Store : ebooks, templates, formations et outils numériques premium. Paiement 100 % sécurisé, téléchargement instantané, garantie 30 jours satisfait ou remboursé. Plus de 25 000 clients satisfaits." />
+  <meta property="og:title" content="Digital Store — Produits numériques premium" />
+  <meta property="og:description" content="Téléchargement instantané, paiement sécurisé, garantie 30 jours. Rejoignez plus de 25 000 clients satisfaits." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/hero.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234F46E5'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='30' font-weight='bold' fill='white' text-anchor='middle'%3EDS%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ══════════ Bandeau confiance ══════════ -->
+  <div class="topbar" role="note">
+    <div class="container topbar__inner">
+      <span class="topbar__item">🔒 Paiement 100&nbsp;% sécurisé</span>
+      <span class="topbar__sep" aria-hidden="true">•</span>
+      <span class="topbar__item">🛡️ Garantie 30 jours satisfait ou remboursé</span>
+      <span class="topbar__sep" aria-hidden="true">•</span>
+      <span class="topbar__item">⚡ Téléchargement instantané</span>
+    </div>
+  </div>
+
+  <!-- ══════════ En-tête ══════════ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Digital Store — Accueil">
+        <span class="logo__badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-4Z" fill="url(#lg)"/><path d="m8.5 12 2.5 2.5L15.5 9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="lg" x1="0" y1="0" x2="24" y2="24"><stop stop-color="#4F46E5"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient></defs></svg>
+        </span>
+        <span class="logo__text">Digital<span>Store</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <a href="#produits">Produits</a>
+        <a href="#avantages">Garanties</a>
+        <a href="#avis">Avis clients</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <div class="header__trust" aria-label="Note moyenne">
+          <span class="stars" aria-hidden="true"><i style="width:98%"></i></span>
+          <span><strong>4,9/5</strong> · 2 480 avis</span>
+        </div>
+        <button class="cart-btn" id="cart-open" aria-label="Ouvrir le panier">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-btn__count" id="cart-count">0</span>
+        </button>
+        <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ══════════ Héros ══════════ -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <div class="hero__proof">
+            <div class="avatars" aria-hidden="true">
+              <span style="--c1:#4F46E5;--c2:#8B5CF6">SD</span>
+              <span style="--c1:#059669;--c2:#34D399">MK</span>
+              <span style="--c1:#DC2626;--c2:#F59E0B">AT</span>
+              <span style="--c1:#7C3AED;--c2:#EC4899">LB</span>
+            </div>
+            <p><span class="stars stars--sm" aria-hidden="true"><i style="width:98%"></i></span> <strong>4,9/5</strong> — plus de <strong>25 000 clients</strong> nous font confiance</p>
+          </div>
+          <h1>Des produits numériques <span class="grad-text">premium</span>, en toute confiance.</h1>
+          <p class="hero__lead">Ebooks, templates, formations et outils professionnels, livrés instantanément après votre commande. Votre satisfaction est garantie 30 jours, sans conditions.</p>
+          <div class="hero__cta">
+            <a href="#produits" class="btn btn--primary btn--lg">Découvrir la boutique
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#avis" class="btn btn--ghost btn--lg">Voir les avis clients</a>
+          </div>
+          <ul class="hero__bullets">
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Téléchargement instantané</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Paiement sécurisé SSL</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Support 7 j/7</li>
+          </ul>
+        </div>
+        <div class="hero__visual reveal">
+          <img src="assets/hero.jpg" alt="Collection de produits numériques Digital Store : ebook, formation vidéo, templates et tableaux de bord" width="640" height="475" />
+          <div class="float-card float-card--1">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="#059669"><path d="M12 2 3 6v6c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V6l-9-4Zm-1.2 14.3-3.6-3.6 1.4-1.4 2.2 2.2 4.6-4.6 1.4 1.4-6 6Z"/></svg>
+            <div><strong>Achat vérifié</strong><br><small>Commande #24891 livrée</small></div>
+          </div>
+          <div class="float-card float-card--2">
+            <span class="stars stars--sm" aria-hidden="true"><i style="width:100%"></i></span>
+            <div><strong>Excellent</strong><br><small>2 480 avis vérifiés</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ Bande de garanties ══════════ -->
+    <section class="trustbar" id="avantages" aria-label="Nos garanties">
+      <div class="container trustbar__grid">
+        <div class="trustbar__item reveal">
+          <div class="trustbar__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <div><h3>Paiement 100 % sécurisé</h3><p>Cryptage SSL 256 bits via Stripe &amp; PayPal. Vos données bancaires ne sont jamais stockées.</p></div>
+        </div>
+        <div class="trustbar__item reveal">
+          <div class="trustbar__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z"/></svg>
+          </div>
+          <div><h3>Téléchargement instantané</h3><p>Recevez vos fichiers par e-mail en moins de 60 secondes après votre commande.</p></div>
+        </div>
+        <div class="trustbar__item reveal">
+          <div class="trustbar__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-4Z"/><path d="m8.5 12 2.5 2.5 4.5-5.5"/></svg>
+          </div>
+          <div><h3>Garantie 30 jours</h3><p>Satisfait ou remboursé intégralement pendant 30 jours, sans aucune justification.</p></div>
+        </div>
+        <div class="trustbar__item reveal">
+          <div class="trustbar__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"/></svg>
+          </div>
+          <div><h3>Support humain 7 j/7</h3><p>Une équipe réelle vous répond en français en moins de 2 heures, 7 jours sur 7.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ Statistiques ══════════ -->
+    <section class="stats" aria-label="Chiffres clés">
+      <div class="container stats__grid">
+        <div class="stat reveal"><strong data-count="25000" data-suffix="+">0</strong><span>clients satisfaits</span></div>
+        <div class="stat reveal"><strong data-count="60000" data-suffix="+">0</strong><span>téléchargements</span></div>
+        <div class="stat reveal"><strong data-count="4.9" data-decimals="1" data-suffix="/5">0</strong><span>note moyenne</span></div>
+        <div class="stat reveal"><strong data-count="98" data-suffix="%">0</strong><span>avis positifs</span></div>
+      </div>
+    </section>
+
+    <!-- ══════════ Produits ══════════ -->
+    <section class="section products" id="produits">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Boutique</span>
+          <h2>Nos produits les plus populaires</h2>
+          <p>Chaque produit est testé, noté et approuvé par notre communauté. Téléchargement immédiat après achat.</p>
+        </div>
+
+        <div class="products__grid">
+          <!-- Produit 1 -->
+          <article class="card reveal" data-id="ebook-business">
+            <div class="card__media">
+              <img src="assets/products/ebook-business.jpg" alt="Ebook — Lancer son business en ligne : couverture premium violette" loading="lazy" />
+              <span class="badge badge--best">★ Bestseller</span>
+              <span class="badge badge--promo">-50 %</span>
+            </div>
+            <div class="card__body">
+              <span class="card__cat">Ebook · PDF</span>
+              <h3>Lancer son Business en Ligne</h3>
+              <div class="card__rating">
+                <span class="stars stars--sm" aria-hidden="true"><i style="width:98%"></i></span>
+                <span><strong>4,9</strong> · 1 240 avis</span>
+              </div>
+              <p class="card__desc">Le guide complet de 180 pages pour créer et rentabiliser votre activité en ligne, étape par étape.</p>
+              <div class="card__foot">
+                <div class="price"><s>39,99&nbsp;€</s><strong>19,99&nbsp;€</strong></div>
+                <button class="btn btn--primary btn--add" data-add="ebook-business" data-name="Lancer son Business en Ligne" data-price="19.99" data-img="assets/products/ebook-business.jpg">Ajouter</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produit 2 -->
+          <article class="card reveal" data-id="notion-templates">
+            <div class="card__media">
+              <img src="assets/products/notion-templates.jpg" alt="Pack 50 templates Notion Pro : dashboards de productivité" loading="lazy" />
+              <span class="badge badge--best">★ Bestseller</span>
+            </div>
+            <div class="card__body">
+              <span class="card__cat">Templates Notion</span>
+              <h3>Pack 50 Templates Notion Pro</h3>
+              <div class="card__rating">
+                <span class="stars stars--sm" aria-hidden="true"><i style="width:96%"></i></span>
+                <span><strong>4,8</strong> · 867 avis</span>
+              </div>
+              <p class="card__desc">Organisation, finances, projets, habitudes : 50 templates prêts à l'emploi pour tout gérer.</p>
+              <div class="card__foot">
+                <div class="price"><strong>29,99&nbsp;€</strong></div>
+                <button class="btn btn--primary btn--add" data-add="notion-templates" data-name="Pack 50 Templates Notion Pro" data-price="29.99" data-img="assets/products/notion-templates.jpg">Ajouter</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produit 3 -->
+          <article class="card reveal" data-id="formation-marketing">
+            <div class="card__media">
+              <img src="assets/products/formation-marketing.jpg" alt="Formation vidéo — Marketing Digital 2026" loading="lazy" />
+              <span class="badge badge--new">Nouveau</span>
+            </div>
+            <div class="card__body">
+              <span class="card__cat">Formation vidéo · 12 h</span>
+              <h3>Marketing Digital 2026 — La Formation Complète</h3>
+              <div class="card__rating">
+                <span class="stars stars--sm" aria-hidden="true"><i style="width:100%"></i></span>
+                <span><strong>5,0</strong> · 312 avis</span>
+              </div>
+              <p class="card__desc">12 heures de vidéo, 45 leçons, certificat inclus et accès à vie aux mises à jour.</p>
+              <div class="card__foot">
+                <div class="price"><s>149,99&nbsp;€</s><strong>89,99&nbsp;€</strong></div>
+                <button class="btn btn--primary btn--add" data-add="formation-marketing" data-name="Formation Marketing Digital 2026" data-price="89.99" data-img="assets/products/formation-marketing.jpg">Ajouter</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produit 4 -->
+          <article class="card reveal" data-id="canva-pack">
+            <div class="card__media">
+              <img src="assets/products/canva-pack.jpg" alt="Pack 200 templates Canva pour réseaux sociaux" loading="lazy" />
+            </div>
+            <div class="card__body">
+              <span class="card__cat">Templates Canva</span>
+              <h3>Pack 200 Templates Réseaux Sociaux</h3>
+              <div class="card__rating">
+                <span class="stars stars--sm" aria-hidden="true"><i style="width:92%"></i></span>
+                <span><strong>4,7</strong> · 654 avis</span>
+              </div>
+              <p class="card__desc">200 designs professionnels modifiables sur Canva pour Instagram, TikTok et LinkedIn.</p>
+              <div class="card__foot">
+                <div class="price"><strong>24,99&nbsp;€</strong></div>
+                <button class="btn btn--primary btn--add" data-add="canva-pack" data-name="Pack 200 Templates Réseaux Sociaux" data-price="24.99" data-img="assets/products/canva-pack.jpg">Ajouter</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produit 5 -->
+          <article class="card reveal" data-id="presets-lightroom">
+            <div class="card__media">
+              <img src="assets/products/presets-lightroom.jpg" alt="15 presets Lightroom effet cinéma : avant / après" loading="lazy" />
+              <span class="badge badge--promo">-40 %</span>
+            </div>
+            <div class="card__body">
+              <span class="card__cat">Presets photo</span>
+              <h3>15 Presets Lightroom — Édition Cinéma</h3>
+              <div class="card__rating">
+                <span class="stars stars--sm" aria-hidden="true"><i style="width:96%"></i></span>
+                <span><strong>4,8</strong> · 428 avis</span>
+              </div>
+              <p class="card__desc">Transformez vos photos en un clic avec 15 rendus cinématographiques, mobile et desktop.</p>
+              <div class="card__foot">
+                <div class="price"><s>24,99&nbsp;€</s><strong>14,99&nbsp;€</strong></div>
+                <button class="btn btn--primary btn--add" data-add="presets-lightroom" data-name="15 Presets Lightroom Cinéma" data-price="14.99" data-img="assets/products/presets-lightroom.jpg">Ajouter</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produit 6 -->
+          <article class="card reveal" data-id="excel-finance">
+            <div class="card__media">
+              <img src="assets/products/excel-finance.jpg" alt="Suite Excel — Gestion financière : tableaux de bord automatisés" loading="lazy" />
+            </div>
+            <div class="card__body">
+              <span class="card__cat">Tableurs Excel</span>
+              <h3>Suite Excel — Gestion Financière</h3>
+              <div class="card__rating">
+                <span class="stars stars--sm" aria-hidden="true"><i style="width:98%"></i></span>
+                <span><strong>4,9</strong> · 590 avis</span>
+              </div>
+              <p class="card__desc">Budget, trésorerie, facturation : 12 tableaux de bord automatisés pour piloter vos finances.</p>
+              <div class="card__foot">
+                <div class="price"><strong>34,99&nbsp;€</strong></div>
+                <button class="btn btn--primary btn--add" data-add="excel-finance" data-name="Suite Excel Gestion Financière" data-price="34.99" data-img="assets/products/excel-finance.jpg">Ajouter</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="products__secure reveal" role="note">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <p>Transactions chiffrées <strong>SSL 256 bits</strong> · Nous acceptons :</p>
+          <div class="pay-badges" aria-label="Moyens de paiement acceptés">
+            <span class="pay-badge pay-badge--visa">VISA</span>
+            <span class="pay-badge pay-badge--mc"><i></i><i></i></span>
+            <span class="pay-badge pay-badge--paypal">Pay<b>Pal</b></span>
+            <span class="pay-badge pay-badge--apple"> Pay</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ Comment ça marche ══════════ -->
+    <section class="section steps">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Simple &amp; rapide</span>
+          <h2>Recevez votre commande en 2 minutes</h2>
+        </div>
+        <div class="steps__grid">
+          <div class="step reveal">
+            <span class="step__num">1</span>
+            <h3>Commandez en toute sécurité</h3>
+            <p>Réglez par carte bancaire ou PayPal via une connexion chiffrée. Aucun compte à créer.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num">2</span>
+            <h3>Téléchargez instantanément</h3>
+            <p>Vos liens de téléchargement arrivent par e-mail en moins de 60 secondes. Accès à vie.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num">3</span>
+            <h3>Profitez sereinement</h3>
+            <p>Support 7 j/7 et garantie 30 jours satisfait ou remboursé. Zéro risque pour vous.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ Garantie ══════════ -->
+    <section class="section guarantee">
+      <div class="container guarantee__inner reveal">
+        <div class="guarantee__shield" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="72" height="72" fill="none" stroke="url(#gg)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-4Z"/><path d="m8.5 12 2.5 2.5 4.5-5.5"/><defs><linearGradient id="gg" x1="0" y1="0" x2="24" y2="24"><stop stop-color="#4F46E5"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient></defs></svg>
+          <span>30<br><small>jours</small></span>
+        </div>
+        <div>
+          <h2>Notre garantie inconditionnelle</h2>
+          <p>Si un produit ne vous convient pas, écrivez-nous dans les <strong>30 jours</strong> et nous vous remboursons <strong>intégralement, sans question</strong>. Vous ne prenez aucun risque : tout le risque est pour nous.</p>
+          <a href="#produits" class="btn btn--primary">Acheter en toute confiance</a>
+        </div>
+        <ul class="guarantee__list">
+          <li>✔ Remboursement sous 48 h</li>
+          <li>✔ Aucune justification demandée</li>
+          <li>✔ Vous conservez l'accès au support</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══════════ Avis clients ══════════ -->
+    <section class="section reviews" id="avis">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Ils nous font confiance</span>
+          <h2>Ce que disent nos clients</h2>
+          <p><span class="stars" aria-hidden="true"><i style="width:98%"></i></span> <strong>4,9/5</strong> sur la base de 2 480 avis vérifiés</p>
+        </div>
+        <div class="reviews__grid">
+          <figure class="review reveal">
+            <span class="stars" aria-label="5 étoiles sur 5"><i style="width:100%"></i></span>
+            <blockquote>« Ebook d'une qualité rare. J'ai lancé ma boutique en 3 semaines grâce au plan d'action. Le support m'a répondu un dimanche soir, impressionnant. »</blockquote>
+            <figcaption>
+              <span class="avatar" style="--c1:#4F46E5;--c2:#8B5CF6">SD</span>
+              <div><strong>Sophie D.</strong><small><span class="verified">✔ Achat vérifié</span> · Lille</small></div>
+            </figcaption>
+          </figure>
+          <figure class="review reveal">
+            <span class="stars" aria-label="5 étoiles sur 5"><i style="width:100%"></i></span>
+            <blockquote>« J'étais sceptique au début, mais la garantie 30 jours m'a rassuré. Résultat : les templates Notion ont transformé mon organisation. Je recommande les yeux fermés. »</blockquote>
+            <figcaption>
+              <span class="avatar" style="--c1:#059669;--c2:#34D399">MK</span>
+              <div><strong>Mehdi K.</strong><small><span class="verified">✔ Achat vérifié</span> · Lyon</small></div>
+            </figcaption>
+          </figure>
+          <figure class="review reveal">
+            <span class="stars" aria-label="5 étoiles sur 5"><i style="width:100%"></i></span>
+            <blockquote>« Téléchargement reçu en moins d'une minute après le paiement. La formation marketing vaut largement son prix, très à jour pour 2026. »</blockquote>
+            <figcaption>
+              <span class="avatar" style="--c1:#DC2626;--c2:#F59E0B">AT</span>
+              <div><strong>Awa T.</strong><small><span class="verified">✔ Achat vérifié</span> · Dakar</small></div>
+            </figcaption>
+          </figure>
+          <figure class="review reveal">
+            <span class="stars" aria-label="5 étoiles sur 5"><i style="width:96%"></i></span>
+            <blockquote>« Les presets sont magnifiques et l'équipe m'a aidée à les installer sur mobile. Service client vraiment humain, pas des robots. »</blockquote>
+            <figcaption>
+              <span class="avatar" style="--c1:#7C3AED;--c2:#EC4899">LB</span>
+              <div><strong>Léa B.</strong><small><span class="verified">✔ Achat vérifié</span> · Bordeaux</small></div>
+            </figcaption>
+          </figure>
+          <figure class="review reveal">
+            <span class="stars" aria-label="5 étoiles sur 5"><i style="width:100%"></i></span>
+            <blockquote>« La suite Excel m'a fait gagner un temps fou pour ma compta. J'ai eu une question sur une formule : réponse en 40 minutes. Sérieux et professionnel. »</blockquote>
+            <figcaption>
+              <span class="avatar" style="--c1:#0891B2;--c2:#22D3EE">JM</span>
+              <div><strong>Julien M.</strong><small><span class="verified">✔ Achat vérifié</span> · Nantes</small></div>
+            </figcaption>
+          </figure>
+          <figure class="review reveal">
+            <span class="stars" aria-label="5 étoiles sur 5"><i style="width:100%"></i></span>
+            <blockquote>« Première commande un peu stressée, tout s'est passé parfaitement : paiement sécurisé, fichiers reçus immédiatement. Je viens de recommander deux produits. »</blockquote>
+            <figcaption>
+              <span class="avatar" style="--c1:#B45309;--c2:#FBBF24">FO</span>
+              <div><strong>Fatou O.</strong><small><span class="verified">✔ Achat vérifié</span> · Ouagadougou</small></div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ FAQ ══════════ -->
+    <section class="section faq" id="faq">
+      <div class="container faq__inner">
+        <div class="section__head reveal">
+          <span class="eyebrow">Questions fréquentes</span>
+          <h2>Tout savoir avant de commander</h2>
+        </div>
+        <div class="faq__list reveal">
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Comment et quand vais-je recevoir mon produit ?<span class="faq__chev" aria-hidden="true"></span></button>
+            <div class="faq__a"><p>Immédiatement après validation du paiement, un e-mail contient vos liens de téléchargement (moins de 60 secondes en général). L'accès est illimité et valable à vie. Pensez à vérifier vos spams si besoin.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Le paiement est-il vraiment sécurisé ?<span class="faq__chev" aria-hidden="true"></span></button>
+            <div class="faq__a"><p>Oui. Toutes les transactions sont chiffrées en SSL 256 bits et traitées par Stripe et PayPal, leaders mondiaux du paiement en ligne. Nous ne voyons ni ne stockons jamais vos données bancaires.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Et si le produit ne me convient pas ?<span class="faq__chev" aria-hidden="true"></span></button>
+            <div class="faq__a"><p>Vous bénéficiez de 30 jours pour changer d'avis. Un simple e-mail suffit : nous vous remboursons intégralement sous 48 h, sans demander de justification.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Quels sont les formats des fichiers ?<span class="faq__chev" aria-hidden="true"></span></button>
+            <div class="faq__a"><p>Ebooks en PDF, templates Notion et Canva via liens de duplication, presets Lightroom (DNG + XMP mobile/desktop), tableurs Excel (.xlsx) et formations accessibles en streaming illimité.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Puis-je utiliser les produits pour un usage commercial ?<span class="faq__chev" aria-hidden="true"></span></button>
+            <div class="faq__a"><p>Oui, la licence standard inclut l'usage commercial pour vos propres projets (1 utilisateur). Seule la revente ou la redistribution des fichiers est interdite.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Comment contacter le support ?<span class="faq__chev" aria-hidden="true"></span></button>
+            <div class="faq__a"><p>Par e-mail à <a href="mailto:contact@digital-store.com">contact@digital-store.com</a>, 7 jours sur 7. Temps de réponse moyen : moins de 2 heures.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ Appel à l'action final ══════════ -->
+    <section class="cta">
+      <div class="container cta__inner reveal">
+        <h2>Prêt à passer au niveau supérieur ?</h2>
+        <p>Rejoignez plus de 25 000 clients satisfaits. Téléchargement instantané, garantie 30 jours.</p>
+        <a href="#produits" class="btn btn--light btn--lg">Explorer la boutique</a>
+        <div class="cta__trust">
+          <span>🔒 Paiement sécurisé</span><span>⚡ Livraison instantanée</span><span>🛡️ Garantie 30 jours</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════ Pied de page ══════════ -->
+  <footer class="footer" id="contact">
+    <div class="container footer__grid">
+      <div class="footer__col footer__col--brand">
+        <a href="#" class="logo logo--footer">
+          <span class="logo__badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-4Z" fill="url(#lg2)"/><path d="m8.5 12 2.5 2.5 4.5-5.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="lg2" x1="0" y1="0" x2="24" y2="24"><stop stop-color="#4F46E5"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient></defs></svg>
+          </span>
+          <span class="logo__text">Digital<span>Store</span></span>
+        </a>
+        <p>La boutique de confiance pour vos produits numériques : qualité premium, livraison instantanée et support humain en français.</p>
+        <div class="pay-badges pay-badges--footer" aria-label="Moyens de paiement acceptés">
+          <span class="pay-badge pay-badge--visa">VISA</span>
+          <span class="pay-badge pay-badge--mc"><i></i><i></i></span>
+          <span class="pay-badge pay-badge--paypal">Pay<b>Pal</b></span>
+          <span class="pay-badge pay-badge--apple"> Pay</span>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Boutique</h4>
+        <a href="#produits">Tous les produits</a>
+        <a href="#avantages">Nos garanties</a>
+        <a href="#avis">Avis clients</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer__col">
+        <h4>Informations légales</h4>
+        <a href="#">Conditions générales de vente</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de remboursement</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="mailto:contact@digital-store.com">contact@digital-store.com</a>
+        <p class="footer__note">Support 7 j/7 — réponse en moins de 2 h</p>
+        <p class="footer__note">🔒 Site protégé par SSL</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 Digital Store — Tous droits réservés.</p>
+      <p><span class="stars stars--sm" aria-hidden="true"><i style="width:98%"></i></span> 4,9/5 · 2 480 avis vérifiés</p>
+    </div>
+  </footer>
+
+  <!-- ══════════ Panier (tiroir) ══════════ -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="Panier" aria-hidden="true">
+    <div class="drawer__head">
+      <h3>Votre panier <span id="drawer-count"></span></h3>
+      <button class="drawer__close" id="cart-close" aria-label="Fermer le panier">✕</button>
+    </div>
+    <div class="drawer__items" id="drawer-items"></div>
+    <div class="drawer__empty" id="drawer-empty">
+      <p>🛒 Votre panier est vide.</p>
+      <a href="#produits" class="btn btn--primary" id="drawer-browse">Voir les produits</a>
+    </div>
+    <div class="drawer__foot" id="drawer-foot" hidden>
+      <div class="drawer__total"><span>Total</span><strong id="drawer-total">0,00&nbsp;€</strong></div>
+      <button class="btn btn--primary btn--lg btn--block" id="checkout-btn">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Commander en toute sécurité
+      </button>
+      <p class="drawer__secure">🔒 Paiement chiffré SSL · 🛡️ Garantie 30 jours · ⚡ Téléchargement immédiat</p>
+    </div>
+  </aside>
+
+  <!-- ══════════ Confirmation de commande ══════════ -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal__box">
+      <div class="modal__check" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      </div>
+      <h3>Commande confirmée !</h3>
+      <p id="modal-text">Merci pour votre confiance. Vos liens de téléchargement viennent d'être envoyés par e-mail.</p>
+      <button class="btn btn--primary" id="modal-close">Parfait, merci !</button>
+    </div>
+  </div>
+
+  <!-- ══════════ Notifications ══════════ -->
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <div class="social-proof" id="social-proof" hidden>
+    <span class="social-proof__dot" aria-hidden="true"></span>
+    <p id="social-proof-text"></p>
+    <button id="social-proof-close" aria-label="Fermer">✕</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
